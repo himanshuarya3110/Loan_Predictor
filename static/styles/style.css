@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Jersey+20&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+body {
+    background: rgb(63, 94, 251);
+    background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(70, 234, 252, 1) 100%);
+    padding: 15px;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.heading {
+    /*
+    font-family: "Ubuntu", sans-serif;
+    */
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container-form {
+    background-color: #ffffff;
+    box-shadow: 2px 2px 10px #dddddd;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1px;
+    border-radius: 8px;
+    animation: formFadeIn 2s;
+}
+
+@keyframes formFadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+label {
+    font-weight: 300;
+    /*font-style: italic;
+font-weight: bold;
+font-style: italic;
+*/
+    font-family: "Ubuntu", sans-serif;
+    text-align: left;
+}
+
+.form-container-label {
+    margin-right: 50px;
+}
+
+.focused-label {
+    /*
+*/
+    font-style: italic;
+    font-weight: 400;
+}
+
+input[type=number],
+select {
+    width: 100%;
+    font-family: "Ubuntu", sans-serif;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+input[type=number]:focus,
+select:focus {
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.8);
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    width: 100%;
+    margin-top: 20px;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.home-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.home-btn:hover {
+    background-color: #45a049;
+}
+
+
+.result-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.result-child {
+    width: auto;
+    height: 100px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Chakra Petch", sans-serif;
+}
+
+.result-parent .home {
+    padding: 10px;
+}
+
+.result-parent .result-child {
+    font-size: 300%;
+    text-transform: uppercase;
+    font-family: "Ubuntu", sans-serif;
+}
+
+th,
+td {
+    padding: 2px;
+    text-align: left;
+}
+
+table {
+    width: 100%;
+    padding: 15px;
+    text-align: left;
+}
+
+
+@media screen and (min-width: 768px) {
+    .container-form {
+        padding: 40px;
+    }
+}

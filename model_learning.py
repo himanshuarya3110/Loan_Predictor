@@ -2,8 +2,8 @@ import numpy as np
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
-import plotly.express as px
-import plotly.graph_objects as go
+# import plotly.express as px
+# import plotly.graph_objects as go
 from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
@@ -85,11 +85,6 @@ print("Accuracy:", accuracy)
 
 
 
-
-
-
-
-
 # Initialize the Decision Tree classifier
 # print(df_ml.at[0,'cibil_score'])
 
@@ -143,6 +138,9 @@ print("Accuracy:", accuracy)
 
 
 
-pickle.dump(decision_tree,open('new_model.pkl','wb'))
+# pickle.dump(decision_tree,open('new_model.pkl','wb'))
 
 
+# Save the model
+filename = 'savedmodel.sav'
+pickle.dump(decision_tree,open(filename,'wb'))
